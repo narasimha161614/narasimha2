@@ -1,0 +1,16 @@
+
+echo "Enter the reply"
+read pname
+echo "The $pname is : $pname "
+reply=$pname
+case “$reply” in
+[A-Z]) echo “Don’t use an uppercase letter” ;;
+[!a-zA-Z]) echo “Must enter a single letter” ;;
+????*) echo “Can’t exceed three characters” ;;
+$x$x/$x$x/$x$x) echo “Correct format for date” ;;
+*[0-9]*) echo “No numerals permitted” ;;
+*.c|*.java) echo “This is a C or Java program” ;;
+n|N|[nN][oO]) echo “You entered n, N, no, NO, No, etc” ;;
+[a-z]) echo 'you enter the single character' ;;
+“”) echo “You simply pressed [Enter]” ;;
+esac
