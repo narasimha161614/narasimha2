@@ -1,0 +1,19 @@
+#!/bin/sh
+#case study
+if [ $# -eq 0 ] ;
+then
+  echo "Enter the respond (y/n) :" $respond
+  read respond
+if [ "$respond" == "y" ] ;
+then
+ echo "Enter the number"
+ read number
+fi
+case "$number" in
+ 1) ls -l ;;
+ 2) ps -ef ;;
+ 3) ps -kh ;;
+ 4) date ;;
+ 5) quit ;;
+esac
+fi
